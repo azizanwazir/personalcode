@@ -1,0 +1,9 @@
+Sub actionItem()
+	For Each cell in Selection
+		If cell.Offset(0, -2).Value = "No" Then
+			cell.Value = "N/A"
+		Else
+			'ignore
+		End If
+	Next cell
+End Sub
